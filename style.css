@@ -19,10 +19,23 @@
     --red: #cf3c3f;
 }
 
+main {
+    display: flex;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .login {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     max-width: 500px;
     min-height: 100vh;
@@ -173,5 +186,22 @@ input:focus {
 
 .login__button:disabled svg {
     fill: var(--gray);
+}
+
+.login__link {
+    font-size: 0.8em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--medium-gray);
+    margin-bottom: 5px;
+}
+
+.wallpaper {
+    width: 100%;
+    background-image: url(./images/wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    flex: 1;
 }
 
